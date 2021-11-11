@@ -2,8 +2,13 @@
 
 A simple mental workout game. Choose the square that is different to the rest to proceed to the next level. Faster reactions will be awarded with higher scores!
 
-![image](telly2.gif)
+<!-- ![image](telly2.gif){height=300} -->
 
+<!-- [<img src="telly2.gif" width="300"/>](telly.png) -->
+
+<p align="center">
+<img src="telly2.gif" width="300"/>
+</p>
 ## Install
 
 1. Clone the repo
