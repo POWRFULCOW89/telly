@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
 
-import 'package:telly/home.dart';
-import 'package:telly/game.dart';
+import 'package:telly/pages/home/home.dart';
+import 'package:telly/pages/game/game.dart';
 
 void main() {
   runApp(MyApp());
