@@ -9,6 +9,7 @@ A simple mental workout game. Choose the square that is different to the rest to
 <p align="center">
 <img src="telly2.gif" width="300"/>
 </p>
+
 ## Install
 
 1. Clone the repo
