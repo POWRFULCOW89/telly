@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:telly/game.dart';
+import 'package:telly/routes.dart';
 
 class Home extends StatelessWidget {
   Home({Key? key}) : super(key: key);
@@ -33,7 +33,7 @@ class Home extends StatelessWidget {
                 child: const Text('Play', style: TextStyle(fontSize: 25)),
                 onPressed: () {
                   // Navigator.pushNamed(context, '/game');
-                  Navigator.of(context).push(_createRoute());
+                  Navigator.of(context).push(Routes.createRoute(context));
                 },
                 style: buttonStyle,
               )
@@ -47,27 +47,5 @@ class Home extends StatelessWidget {
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
-    ;
   }
-}
-
-Route _createRoute() {
-  return PageRouteBuilder(
-    pageBuilder: (context, animation, secondaryAnimation) => Game(),
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      const begin = Offset(1.0, 0.0);
-      const end = Offset.zero;
-      // final tween = Tween(begin: begin, end: end);
-      const curve = Curves.ease;
-      final curveTween = CurveTween(curve: curve);
-
-      final tween = Tween(begin: begin, end: end).chain(curveTween);
-      final offsetAnimation = animation.drive(tween);
-
-      return SlideTransition(
-        position: offsetAnimation,
-        child: child,
-      );
-    },
-  );
 }

@@ -28,6 +28,6 @@ A simple mental workout game. Choose the square that is different to the rest to
 
 ## TODO
 
-- Leaderboards
-- More levels
-- Animations
+- [ ] Leaderboards
+- [ ] More levels
+- [ ] Animations
